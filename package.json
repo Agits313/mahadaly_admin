@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix api\" \"npm run dev --prefix admin\" \"npm run dev --prefix member\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "mysql": "^2.18.1"
+  }
+}

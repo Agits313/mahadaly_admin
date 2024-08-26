@@ -1,0 +1,145 @@
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-star h-100 appLog d-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body h-100 p-0">
+    <div class="menubar d-block bg-white position-relative h-100">
+      <ul class="menu accordion p-3 menuList"></ul>
+      <div class="menubar-footer p-3 border-top">
+        <ul class="menu accordion">
+          <li class="menu-item d-flex justify-content-center">
+            <a href="#" class="menu-link">
+              <div><img src="/img/iconsax/linear/notification.svg" /><span class="menu-label">Notifikasi</span></div>
+              <span class="badge rounded-circle p-1 bg-danger text-danger notif"></span>
+            </a>
+          </li>
+          <li class="menu-item d-flex justify-content-center">
+            <a href="#" class="menu-link">
+              <div><img src="/img/iconsax/linear/profile-circle.svg" /><span class="menu-label">Profile</span></div>
+            </a>
+          </li>
+          <li class="menu-item d-flex justify-content-center">
+            <a href="#" class="menu-link hover">
+              <div><img src="/img/iconsax/linear/logout.svg" /><span class="menu-label">Logout</span></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="wrapper appLog d-none">
+  <div class="main-navbar navbar-expand-md navbar-dark fixed-top shadow">
+    <div class="collapse navbar-collapse d-flex justify-content-between align-items-center h-100" id="navbarSupportedContent">
+      <div class="text-center w-unset d-flex justify-content-between align-items-center d-lg-none h-100 px-3 bg-white">
+        <a class="menubar-brand" href="#"><img src="/img/logoapp.png" title="Perpustakaan" /> </a>
+      </div>
+      <ul class="navbar-nav me-lg-auto w-md-100 flex-row ps-3 bg-transparent justify-content-end justify-md-content-center">
+        <li class="nav-item me-2 d-flex d-lg-none">
+          <button class="nav-icon btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            <img src="/img/custom/icon/bars.svg" class="icon-b1 filter-white" />
+          </button>
+        </li>
+        <li class="nav-item me-2 d-none d-lg-flex">
+          <a class="nav-icon" id="navbar-toggler"><img src="/img/custom/icon/bars.svg" class="icon-b1 filter-white" /> </a>
+        </li>
+        <li class="nav-item title-page d-none d-lg-flex">
+          <div class="fs-5 fw-semibold text-white app_bar_title">Dashboard</div>
+        </li>
+      </ul>
+      <ul class="navbar-nav pe-3 bg-transparent d-none d-lg-flex">
+        <li class="nav-item me-3 dropdown">
+          <span class="badge rounded-circle p-1 bg-danger text-danger notif"></span>
+          <a class="nav-icon" href="#" id="notifikasi" role="button" data-toggle="dropdown" aria-expanded="false" data-flip="false">
+            <div>
+              <i class="fas fa-bell fs-5"></i>
+            </div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right p-0 border-0 notification" aria-labelledby="notifikasi">
+            <div class="card shadow">
+              <div class="card-header fz-14 bg-white"><a href="#" class="float-right link-blue"> Mark all as read </a>Notifications</div>
+              <div class="perfect-scrollbar position-relative" style="max-height: 400px">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item list-group-item-action py-3">
+                    <div class="d-flex">
+                      <div class="me-3">
+                        <a href="#" class="avatar"><img src="/img/custom/user/user3.jpg" alt="..." /> </a>
+                      </div>
+                      <div class="flex-fill">
+                        <div class="fw-normal text-dark fz-14">Payment schedule <span class="fw-bold">Jambaran Tiung Biru</span> sudah ditetapkan</div>
+                        <span class="text-secondary fw-light fz-12">3 hours ago</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action py-3">
+                    <div class="d-flex">
+                      <div class="me-3">
+                        <a href="#" class="avatar"><img src="/img/custom/user/user3.jpg" alt="..." /> </a>
+                      </div>
+                      <div class="flex-fill">
+                        <div class="fw-normal text-dark fz-14">Payment schedule <span class="fw-bold">Jambaran Tiung Biru</span> sudah ditetapkan</div>
+                        <span class="text-secondary fw-light fz-12">3 hours ago</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action py-3">
+                    <div class="d-flex">
+                      <div class="me-3">
+                        <a href="#" class="avatar"><img src="/img/custom/user/user3.jpg" alt="..." /> </a>
+                      </div>
+                      <div class="flex-fill">
+                        <div class="fw-normal text-dark fz-14">Payment schedule <span class="fw-bold">Jambaran Tiung Biru</span> sudah ditetapkan</div>
+                        <span class="text-secondary fw-light fz-12">3 hours ago</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center border-top border-0 bg-white"><a href="#" class="link-blue fz-14"> See all notifications </a></div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-icon avatar overflow-hidden rounded-circle p-0 object-fit-cover" id="PJXN7R" role="button" data-toggle="dropdown" aria-expanded="false">
+            <img src="/img/iconsax/bulk/profile-circle.svg" class="h-100 object-fit-cover filter-white" />
+          </a>
+          <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="PJXN7R">
+            <a class="dropdown-item fz-14" href="#"> <i class="fas fa-user text-dark me-2"></i>Profile </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item fz-14 app_menu isMenu" data-menu="logout" href="#"> <img src="/img/iconsax/linear/logout.svg" class="icon-3 me-2 filter-dark" />Logout </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="menubar d-none d-lg-flex shadow-sm" id="main-menu">
+    <div class="menubar-header text-center bg-white border-bottom">
+      <a class="menubar-brand d-grid" href="#">
+        <div class="d-flex align-items-center justify-content-center w-100">
+          <img src="/img/logoapp.png" title="Perpustakaan" class="menubar-logo" />
+        </div>
+        <!-- <span class="menu-label text-dark fw-bold mt-1 fz-14">Perpustakaan</span> -->
+      </a>
+    </div>
+    <div class="menubar-body d-flex justify-content-center">
+      <ul class="menu accordion menuList"></ul>
+    </div>
+    <div class="menubar-footer border-top">
+      <ul class="menu accordion">
+        <li class="menu-item d-flex justify-content-center app_menu isMenu" data-menu="logout">
+          <a href="#" class="menu-link hover">
+            <div><img src="/img/iconsax/linear/logout.svg" /><span class="menu-label">Logout</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="app_layout_content mt-4 container-fluid" id="contentLayout"></div>
+</div>
+<div class="app_login" id="contentLogin"></div>
+<div class="blockModal" id="blockModal"></div>
+<script src="./applib/morioh/dist/js/morioh.js"></script>

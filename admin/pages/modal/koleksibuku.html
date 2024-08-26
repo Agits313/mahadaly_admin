@@ -1,0 +1,80 @@
+<div class="formKoleksibuku">
+  <div class="prosesdata"></div>
+  <input type="hidden" name="id" id="id" />
+  <input type="hidden" name="id_file" id="id_file" />
+  <input type="hidden" name="removedCover" id="removedCover" />
+  <div class="formKoleksibukuContent">
+    <div class="row g-3">
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                              Modal content                              -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+        <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+          <label id="judul_label" for="label">
+            <i class="fas fa-folder-open me-1 text-secondary"></i>
+            Judul
+          </label>
+        </div>
+        <div class="col-12 col-sm">
+          <input id="judul" name="judul" type="text" class="form-control" placeholder="Judul" required />
+        </div>
+      </div>
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+        <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+          <label id="label_id_kategori" for="label">
+            <i class="fas fa-folder-open me-1 text-secondary"></i>
+            Kategori
+          </label>
+        </div>
+        <div class="col-12 col-sm">
+          <select name="id_kategori" id="id_kategori"></select>
+        </div>
+      </div>
+      <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+        <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+          <label id="label_penulis" for="label">
+            <i class="fas fa-folder-open me-1 text-secondary"></i>
+            Penulis
+          </label>
+        </div>
+        <div class="col-12 col-sm">
+          <input id="penulis" name="penulis" type="text" class="form-control" placeholder="Nama Penulis" required />
+        </div>
+      </div>
+
+      <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+        <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+          <label id="label_tahun_terbit" for="label">
+            <i class="fas fa-folder-open me-1 text-secondary"></i>
+            Tahun Terbit
+          </label>
+        </div>
+        <div class="col-12 col-sm">
+          <input id="tahun_terbit" name="tahun_terbit" type="number" class="form-control" placeholder="YYYY" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="contentCover" class="dropzone dz-clickable border rounded">
+            <div class="dz-message"><i class="fa-solid fa-image"></i> Drag & drop file gambar cover</div>
+          </div>
+        </div>
+      </div>
+      <div class="d-sm-flex align-items-start col-12 mb-3 mb-sm-0">
+        <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+          <label id="label_sinopsis" for="label">
+            <i class="fas fa-folder-open me-1 text-secondary"></i>
+            Sinopsis
+          </label>
+        </div>
+        <div class="col-12 col-sm">
+          <div class="loadingItem">
+            <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+          </div>
+          <div class="editor d-none"><textarea name="sinopsis" class="form-control" id="sinopsis"></textarea></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

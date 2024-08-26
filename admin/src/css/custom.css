@@ -1,0 +1,364 @@
+.maskingForm {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 30;
+  left: 0;
+  top: 0;
+}
+.mainLoadItem {
+  position: absolute; /* Position the spinner container absolutely */
+  top: 50%; /* Move it to the middle vertically */
+  left: 50%; /* Move it to the middle horizontally */
+  transform: translate(-50%, -50%);
+}
+.background.img-wrap img {
+  object-fit: fill;
+  opacity: 1 !important;
+  /* filter: blur(1px); */
+}
+.generalmodal {
+  display: flex !important;
+  font-size: 14px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Highchart                                 */
+/* -------------------------------------------------------------------------- */
+.highcharts-credits {
+  display: none;
+}
+
+.highcharts-title {
+  font-size: 14px !important;
+  font-weight: normal;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Table                                   */
+/* -------------------------------------------------------------------------- */
+/* .table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #e0e0e0;
+} */
+
+.dataTables_empty img {
+  width: 10%;
+}
+
+.hasActionRow .action-menu {
+  display: none;
+  position: absolute;
+  width: max-content;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 14px;
+  z-index: 999;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.hasActionRow .action-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hasActionRow .action-menu li a {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  transition: 0.15s all ease;
+}
+
+.hasActionRow .action-menu li i {
+  margin-right: 0.5rem;
+}
+
+.hasActionRow .action-menu li a:hover {
+  /* margin-bottom: 10px; */
+  background-color: #0047ab;
+}
+
+.hasActionRow .action-menu li:last-child a {
+  margin-bottom: 0;
+}
+
+.hasActionRow .action-menu a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  font-weight: 500;
+}
+
+.hasActionRow .action-menu a i {
+  color: #6c6c6c;
+}
+
+.hasActionRow .action-menu li:hover a,
+.hasActionRow .action-menu li:hover a i {
+  color: #fff !important;
+}
+.hasClickOption {
+  cursor: pointer !important;
+}
+.hasClickOption:hover {
+  color: #999;
+}
+
+/*  */
+
+button {
+  min-height: unset !important;
+  font-family: inherit !important;
+}
+
+/*  */
+
+.menubar-brand img {
+  max-width: unset !important;
+}
+
+.formKodesoalContent label {
+  /* width: 120px; */
+}
+
+.formKodesoalContent textarea {
+  width: 100%;
+  /* resize: none; */
+}
+
+/*  */
+
+.btn {
+  --bs-btn-font-size: 14px;
+}
+
+.form-check-input {
+  border: 1px solid #ced4da;
+}
+
+@media (min-width: 576px) {
+  .modal .butirsoalForm .modal-body {
+    height: 500px;
+  }
+}
+
+.editorWrap {
+  width: 100%;
+}
+
+.fontsmall {
+  font-size: 14px;
+}
+
+#areaSoal {
+  margin-bottom: 10px;
+}
+#areaSoal .nav-item .nav-link {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     NaV                                    */
+/* -------------------------------------------------------------------------- */
+
+.nav-item .nav-link {
+  border: 1px solid #ccdaee;
+  border-bottom: 1px solid #e2e9f3;
+  background-color: #e2e9f3;
+  color: #0047ab;
+  transition: all 0.4s ease;
+}
+
+.nav-item .nav-link:hover {
+  background-color: #ccdaee;
+}
+
+.nav-item {
+  margin-left: 0.3rem;
+}
+
+.nav-item:first-child {
+  margin-left: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #0047ab;
+  border: 1px solid #0047ab;
+}
+
+.nav-tabs .nav-item.show .nav-link:hover,
+.nav-tabs .nav-link.active:hover {
+  border: 1px solid #002f72;
+  background: #002f72;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   @Media                                   */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .modal .butirsoalForm .modal-body {
+    width: 70rem;
+  }
+}
+
+.text-no-wrap {
+  white-space: nowrap !important;
+}
+
+@media (min-width: 1500px) {
+  .row-cols-xxxl-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .row-cols-xxxl-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+/*  */
+
+.custom-dt .button-wrap .btn {
+  height: 39px;
+  border-radius: 0.25rem !important;
+}
+
+@media (min-width: 992px) {
+  .w-lg-50 {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-xl-50 {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .w-xxl-50 {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .row-cols-xxxxl-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  .w-xxxxl-20 {
+    width: 20% !important;
+  }
+  .me-xxxxl-0 {
+    margin-right: 0 !important;
+  }
+  .me-xxxxl-1 {
+    margin-right: 0.25rem !important;
+  }
+  .ms-xxxxl-0 {
+    margin-left: 0 !important;
+  }
+  .ms-xxxxl-1 {
+    margin-left: 0.25rem !important;
+  }
+}
+
+.selected_area {
+  border: 1px solid #999;
+  width: 100%;
+  height: 500px;
+  /* .modalCustom-height {
+  height: 550px;
+  overflow: hidden;
+} */
+}
+
+@media (max-width: 767.98px) {
+  .w-md-down-100 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .modal #generalForm {
+    width: 100%;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Custom size                                */
+/* -------------------------------------------------------------------------- */
+/* table.dataTable tbody tr:last-child td {
+  border-bottom: 1px solid #00000026 !important;
+} */
+
+/*  */
+
+.note-editor.note-airframe,
+.note-editor.note-frame {
+  border: 1px solid #dee2e6;
+}
+
+/*  */
+
+.tableSoal .table thead th:last-child {
+  width: 9% !important;
+}
+
+.tablePilihanSoal .table thead th:last-child {
+  width: 7% !important;
+}
+
+.formRole table.dataTable thead th:first-child {
+  width: unset !important;
+}
+
+@media (min-width: 576px) {
+  .border-sm-bottom {
+    border-bottom: 1px solid;
+  }
+}
+
+.opsiVideo label {
+  cursor: pointer;
+}
+
+.opsiVideo input[type="radio"] {
+  margin-bottom: 5px;
+}
+
+.contentImage {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Multi Select                                */
+/* -------------------------------------------------------------------------- */
+.ms-container {
+  width: 100% !important;
+}
+.ms-container .ms-list {
+  border-radius: 8px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Dropzone                                  */
+/* -------------------------------------------------------------------------- */
+
+#contentPDF,
+#contentCover {
+  margin: 2em 0;
+  max-height: 150px;
+  overflow: auto;
+}

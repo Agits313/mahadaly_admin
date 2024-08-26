@@ -1,0 +1,52 @@
+<div class="formSetlogo">
+  <div class="prosesdata"></div>
+  <input type="hidden" name="id" id="id" />
+  <div class="formSetlogoContent">
+    <div class="row g-3">
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                              Modal content                              -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+        <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+          <label id="projectname_label" for="projectname"><i class="fas fa-folder-open me-1 text-secondary"></i> Project
+          </label>
+        </div>
+        <div class="col-12 col-sm">
+          <input id="projectname" name="projectname" type="text" class="form-control" readonly />
+        </div>
+      </div>
+
+      <input type="hidden" id="logo" name="logo" />
+      <input type="hidden" id="project_path" name="project_path" />
+      <div class="d-sm-flex align-items-start col-12 mb-3 mb-sm-0 pt-sm-1">
+        <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+          <label id="filelogo_label" for="label"> <i class="fas fa-folder-open me-1 text-secondary"></i>File Logo
+          </label>
+        </div>
+        <div class="col-12 col-sm row">
+          <!-- Input file -->
+          <div class="col">
+            <label for="filelogo"
+              class="custom-file-button d-flex justify-content-center align-items-center flex-column bg-light">
+              <div>
+                <i class="fa-solid fa-image fs-1"></i>
+              </div>
+              <div class="mt-2">
+                Choose Image
+              </div>
+            </label>
+            <input id="filelogo" name="filelogo" type="file" class="form-control d-none" required />
+          </div>
+          <!-- Input File Preview -->
+          <div class="col d-none">
+            <div class="inputfile-preview">
+              <img src="img/custom/user/user5.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------------- -->
+    </div>
+  </div>
+</div>

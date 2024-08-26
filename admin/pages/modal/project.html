@@ -1,0 +1,125 @@
+<div class="formProject">
+  <div class="prosesdata"></div>
+  <input type="hidden" name="id" id="id" />
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="tab-deskripsiProject-tab" data-bs-toggle="tab"
+        data-bs-target="#tab-deskripsiProject" type="button" role="tab" aria-controls="tab-deskripsiProject"
+        aria-selected="true">Deskripsi Project</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-konfigurasi-tab" data-bs-toggle="tab" data-bs-target="#tab-konfigurasi"
+        type="button" role="tab" aria-controls="tab-konfigurasi" aria-selected="false">Konfigurasi</button>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab-deskripsiProject" role="tabpanel" aria-labelledby="tab-deskripsiProject-tab">
+      <div class="mt-4 pb-1">
+        <div class="formProjectContent">
+          <div class="row g-3">
+            <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="label_label" for="label">
+                  <i class="fas fa-folder-open me-1 text-secondary"></i>
+                  Nama Project
+                </label>
+              </div>
+              <div class="col-12 col-sm">
+                <input id="label" name="label" type="text" class="form-control" placeholder="Isi Nama Project"
+                  required />
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="client_label" for="client"> <i class="fas fa-user me-1 text-secondary"></i> Nama
+                  Client</label>
+              </div>
+              <div class="col-12 col-sm">
+                <select id="client" name="client" class="form-control form-select" aria-label="" required></select>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="category_label" for="category"><i class="fas fa-th-large me-1 text-secondary"></i> Kategori
+                </label>
+              </div>
+              <div class="col-12 col-sm">
+                <select id="category" name="category" class="form-control form-select" aria-label="" required></select>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="project_value_label" for="project_value"> <i
+                    class="fas fa-dollar-sign me-1 text-secondary"></i>
+                  Nilai Project</label>
+              </div>
+              <div class="col-12 col-sm">
+                <input id="project_value" name="project_value" type="text" class="form-control"
+                  placeholder="Project value" required />
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="date_start_label" for="date_start"> <i class="fas fa-play me-1 text-secondary"></i> Tanggal
+                  Mulai</label>
+              </div>
+              <div class="col-12 col-sm">
+                <input id="date_start" name="date_start" type="text" class="form-control" placeholder="Date Start"
+                  required />
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="date_end_label" for="date_end"> <i class="fas fa-stop me-1 text-secondary"></i> Tanggal
+                  Selesai</label>
+              </div>
+              <div class="col-12 col-sm">
+                <input id="date_end" name="date_end" type="text" class="form-control" placeholder="Date End" required />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="tab-konfigurasi" role="tabpanel" aria-labelledby="tab-konfigurasi-tab">
+      <div class="mt-4 pb-1">
+        <div class="formProjectContent">
+          <div class="row g-3">
+            <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="database_label" for="database"> <i class="fas fa-database me-1 text-secondary"></i>
+                  Database Driver
+                </label>
+              </div>
+              <div class="col-12 col-sm">
+                <select id="dbdriver" name="dbdriver" class="form-control form-select" required></select>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center col-12 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="database_label" for="database"><i class="fas fa-database me-1 text-secondary"></i> Nama
+                  Database
+                </label>
+              </div>
+              <div class="col-12 col-sm">
+                <input id="database" name="database" type="text" class="form-control" placeholder="Isi Nama Database"
+                  required />
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-start col-12 mb-3 mb-sm-0 pt-sm-1">
+              <div class="col-12 col-sm-4 col-lg-3 pb-3 pb-sm-0 pe-sm-3">
+                <label id="date_end_label" for="date_end"> <i class="fas fa-table me-1 text-secondary"></i> Template
+                  Table
+                </label>
+              </div>
+              <div class="col-12 col-sm tableList"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

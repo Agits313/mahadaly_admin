@@ -1,0 +1,2038 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Perpustakaan",
+    "description": "Perpustakaan API Collection",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3880/"
+    }
+  ],
+  "paths": {
+    "/dashboard/index": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/datamember": {
+      "post": {
+        "tags": [
+          "Datamember"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatamemberAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Datamember"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatamemberUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Datamember"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatamemberDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/datamember/list": {
+      "post": {
+        "tags": [
+          "Datamember"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatamemberList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/datamember/{id}": {
+      "get": {
+        "tags": [
+          "Datamember"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/kategoribuku": {
+      "post": {
+        "tags": [
+          "Kategoribuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KategoribukuAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Kategoribuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KategoribukuUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Kategoribuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KategoribukuDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kategoribuku/list": {
+      "post": {
+        "tags": [
+          "Kategoribuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KategoribukuList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kategoribuku/{id}": {
+      "get": {
+        "tags": [
+          "Kategoribuku"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/koleksibuku": {
+      "post": {
+        "tags": [
+          "Koleksibuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KoleksibukuAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Koleksibuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KoleksibukuUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Koleksibuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KoleksibukuDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/koleksibuku/list": {
+      "post": {
+        "tags": [
+          "Koleksibuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KoleksibukuList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/koleksibuku/{id}": {
+      "get": {
+        "tags": [
+          "Koleksibuku"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/stokbuku": {
+      "post": {
+        "tags": [
+          "Stokbuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StokbukuAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Stokbuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StokbukuUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Stokbuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StokbukuDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/stokbuku/list": {
+      "post": {
+        "tags": [
+          "Stokbuku"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StokbukuList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/stokbuku/{id}": {
+      "get": {
+        "tags": [
+          "Stokbuku"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/transaksi": {
+      "post": {
+        "tags": [
+          "Transaksi"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransaksiAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Transaksi"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransaksiUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Transaksi"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransaksiDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/transaksi/list": {
+      "post": {
+        "tags": [
+          "Transaksi"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransaksiList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/transaksi/{id}": {
+      "get": {
+        "tags": [
+          "Transaksi"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "tags": [
+          "General"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Login"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/logout": {
+      "post": {
+        "tags": [
+          "General"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Logout"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/general/upload_temp": {
+      "post": {
+        "tags": [
+          "General"
+        ],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GeneralUploadFile"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/level": {
+      "post": {
+        "tags": [
+          "Level"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LevelAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Level"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LevelUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Level"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LevelDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/level/list": {
+      "post": {
+        "tags": [
+          "Level"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LevelList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/level/{id}": {
+      "get": {
+        "tags": [
+          "Level"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/menu": {
+      "post": {
+        "tags": [
+          "Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LevelAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LevelUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LevelDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/menu/list": {
+      "post": {
+        "tags": [
+          "Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LevelList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/menu/{id}": {
+      "get": {
+        "tags": [
+          "Menu"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/web/register": {
+      "post": {
+        "tags": [
+          "Public"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberRegister"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/web/resetpassword": {
+      "post": {
+        "tags": [
+          "Public"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Resetpassword"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/web/updatepassword": {
+      "post": {
+        "tags": [
+          "Public"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberUpdatePassword"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/list": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/webmenu": {
+      "post": {
+        "tags": [
+          "Admin - Web Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebmenuAdd"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Admin - Web Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebmenuUpdate"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Admin - Web Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebmenuDelete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/webmenu/list": {
+      "post": {
+        "tags": [
+          "Admin - Web Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebmenuList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/webmenu/section": {
+      "post": {
+        "tags": [
+          "Admin - Web Menu"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebmenuListSection"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/webmenu/public": {
+      "post": {
+        "tags": [
+          "Public"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebmenuList"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/webmenu/{id}": {
+      "get": {
+        "tags": [
+          "Admin - Web Menu"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/web/kategoribuku": {
+      "post": {
+        "tags": [
+          "Public"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KategoriBuku"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/web/koleksibuku": {
+      "post": {
+        "tags": [
+          "Public"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KoleksiBuku"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/transaksi/add": {
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "example": "any"
+                  },
+                  "id_member": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Login": {
+        "type": "object",
+        "properties": {
+          "userame": {
+            "type": "string",
+            "example": "admin"
+          },
+          "password": {
+            "type": "string",
+            "example": "admin$#"
+          }
+        }
+      },
+      "Logout": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "LoguserList": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "example": 0
+          },
+          "length": {
+            "type": "number",
+            "example": 10
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          },
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dir": {
+                  "type": "string",
+                  "example": "asc"
+                }
+              }
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "example": "id"
+                }
+              }
+            }
+          },
+          "orderDir": {
+            "type": "string",
+            "example": "asc"
+          }
+        }
+      },
+      "LoguserAdd": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "loguser label"
+          }
+        }
+      },
+      "LoguserUpdate": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "loguser label"
+          },
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "LoguserDelete": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "LevelList": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "example": 0
+          },
+          "length": {
+            "type": "number",
+            "example": 10
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          },
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dir": {
+                  "type": "string",
+                  "example": "asc"
+                }
+              }
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "example": "id"
+                }
+              }
+            }
+          },
+          "orderDir": {
+            "type": "string",
+            "example": "asc"
+          }
+        }
+      },
+      "LevelAdd": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "level label"
+          }
+        }
+      },
+      "LevelUpdate": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "level label"
+          },
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "LevelDelete": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "UsersList": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "example": 0
+          },
+          "length": {
+            "type": "number",
+            "example": 10
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          },
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dir": {
+                  "type": "string",
+                  "example": "asc"
+                }
+              }
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "example": "id"
+                }
+              }
+            }
+          },
+          "orderDir": {
+            "type": "string",
+            "example": "asc"
+          }
+        }
+      },
+      "UsersAdd": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "users label"
+          }
+        }
+      },
+      "UsersUpdate": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "users label"
+          },
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "UsersDelete": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "KategoribukuList": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "example": 0
+          },
+          "length": {
+            "type": "number",
+            "example": 10
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          },
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dir": {
+                  "type": "string",
+                  "example": "asc"
+                }
+              }
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "example": "id_kategori"
+                }
+              }
+            }
+          },
+          "orderDir": {
+            "type": "string",
+            "example": "asc"
+          }
+        }
+      },
+      "KategoribukuAdd": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "kategoribuku label"
+          }
+        }
+      },
+      "KategoribukuUpdate": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "kategoribuku label"
+          },
+          "id_kategori": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "KategoribukuDelete": {
+        "type": "object",
+        "properties": {
+          "id_kategori": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "KoleksibukuList": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "example": 0
+          },
+          "length": {
+            "type": "number",
+            "example": 10
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          },
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dir": {
+                  "type": "string",
+                  "example": "asc"
+                }
+              }
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "example": "id"
+                }
+              }
+            }
+          },
+          "orderDir": {
+            "type": "string",
+            "example": "asc"
+          }
+        }
+      },
+      "KoleksibukuAdd": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "koleksibuku label"
+          }
+        }
+      },
+      "KoleksibukuUpdate": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "koleksibuku label"
+          },
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "KoleksibukuDelete": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "GeneralUploadFile": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "example": ""
+          }
+        }
+      },
+      "MemberRegister": {
+        "type": "object",
+        "properties": {
+          "fullname": {
+            "type": "string",
+            "example": "Asep Budiman"
+          },
+          "nickname": {
+            "type": "string",
+            "example": "asepgombloh"
+          },
+          "email": {
+            "type": "string",
+            "example": "asep@asep.com"
+          },
+          "phone": {
+            "type": "string",
+            "example": "0818787878"
+          },
+          "password": {
+            "type": "string",
+            "example": "DanBegitulah"
+          }
+        }
+      },
+      "Resetpassword": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "example": "babang@babang.com"
+          }
+        }
+      },
+      "MemberUpdatePassword": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          },
+          "password1": {
+            "type": "string",
+            "example": ""
+          },
+          "password2": {
+            "type": "string",
+            "example": ""
+          }
+        }
+      },
+      "KategoriBuku": {
+        "type": "object",
+        "properties": {
+          "search": {
+            "type": "string",
+            "example": ""
+          }
+        }
+      },
+      "KoleksiBuku": {
+        "type": "object",
+        "properties": {
+          "id_kategori": {
+            "type": "number",
+            "example": 0
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          }
+        }
+      },
+      "DatamemberList": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "example": 0
+          },
+          "length": {
+            "type": "number",
+            "example": 10
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          },
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dir": {
+                  "type": "string",
+                  "example": "asc"
+                }
+              }
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "example": "id"
+                }
+              }
+            }
+          },
+          "orderDir": {
+            "type": "string",
+            "example": "asc"
+          }
+        }
+      },
+      "DatamemberAdd": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "datamember label"
+          }
+        }
+      },
+      "DatamemberUpdate": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "datamember label"
+          },
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "DatamemberDelete": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "StokbukuList": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "example": 0
+          },
+          "length": {
+            "type": "number",
+            "example": 10
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          },
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dir": {
+                  "type": "string",
+                  "example": "asc"
+                }
+              }
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "example": "id"
+                }
+              }
+            }
+          },
+          "orderDir": {
+            "type": "string",
+            "example": "asc"
+          }
+        }
+      },
+      "StokbukuAdd": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "stokbuku label"
+          }
+        }
+      },
+      "StokbukuUpdate": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "stokbuku label"
+          },
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "StokbukuDelete": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "TransaksiList": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "example": 0
+          },
+          "length": {
+            "type": "number",
+            "example": 10
+          },
+          "search": {
+            "type": "string",
+            "example": ""
+          },
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "number",
+                  "example": 0
+                },
+                "dir": {
+                  "type": "string",
+                  "example": "asc"
+                }
+              }
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "example": "id"
+                }
+              }
+            }
+          },
+          "orderDir": {
+            "type": "string",
+            "example": "asc"
+          }
+        }
+      },
+      "TransaksiAdd": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "transaksi label"
+          }
+        }
+      },
+      "TransaksiUpdate": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "example": "transaksi label"
+          },
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
+      "TransaksiDelete": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 0
+          }
+        }
+      }
+    }
+  }
+}

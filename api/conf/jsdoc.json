@@ -1,0 +1,19 @@
+{
+  "templates": {
+    "systemName": "Perpustakaan - Thejagat",
+    "footer": "Thejagat",
+    "copyright": "thejagat@2023",
+    "includeDate": true,
+    "navType": "vertical",
+    "theme": "lumen",
+    "linenums": true,
+    "collapseSymbols": true,
+    "inverseNav": true,
+    "outputSourceFiles": true,
+    "outputSourcePath": true,
+    "dateFormat": "DD-MM-YYYY",
+    "syntaxTheme": "default",
+    "sort": true,
+    "search": true
+  }
+}
